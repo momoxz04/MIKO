@@ -1,0 +1,23 @@
+*{
+    font-family: Montserrat;
+}
+
+header {
+    height: 60px;
+    background-color: cornsilk;
+    text-align: center;
+
+
+
+}
+
+
+
+ footer{
+     height: 20px;
+     background-color: cornsilk;
+    padding: 20px;
+ }
+main{
+    height: 100vw;
+}
