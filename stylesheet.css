@@ -11,16 +11,10 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-
-
 }
 header a img {
 
     height: 32px;
-
-
-
-
 
 }
 
@@ -28,8 +22,6 @@ header a img {
     background-image: url("img/backgroundpic.jpg");
     background-size: cover;
     background-attachment: fixed;
-
-
 
 }
 nav {
@@ -46,14 +38,19 @@ nav {
 nav a{
     text-decoration: none;
     color: white;
-    padding-top:45px;
+    padding-top: 35px;
 
+
+}
+nav a li{
+    padding-top: 10px;
 }
 main{
     min-height: 500px;
     min-width: 500px;
     height: auto;
     width: 100%;
+    padding: 20px;
 
 
 }
@@ -66,14 +63,23 @@ main{
     background-color: white;
     margin-top: 300px;
     margin-bottom: 300px;
-    position: fixed;
 
+
+
+
+}
+#loginmain h1{
+    font-size: 120pt;
+    padding-bottom: 20px;
 
 
 }
 #frontmain h1{
     font-size: 100px;
+    margin-top: 40px;
     margin-bottom: 40px;
+    margin-left:40px;
+    margin-right: 40px;
     text-align: center;
 
 }
@@ -126,17 +132,18 @@ main{
 }
 
 .aboutsec{
-    margin: 20px 250px;
+    width: 30vw;
+    margin: 40px;
 }
 .aboutsec h3{
     font-size: xxx-large;
     margin-bottom: 30px;
     display:flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 .aboutsec p{
-    width: 20vw;
+
     text-align: justify;
     hyphens: auto;
     font-weight: lighter;
@@ -145,12 +152,15 @@ main{
 #loginmain{
     display:flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     background-color: white;
-    margin-top: 300px;
+    margin-top: 200px;
     margin-bottom: 300px;
     position: fixed;
+}
+#loginmain h1{
+    border-bottom: dotted black 1pt;
+    padding-bottom: 15px;
 }
 
 #aboutmain{
@@ -162,7 +172,28 @@ main{
     margin-top: 100px;
     margin-bottom: 300px;
     position: fixed;
+
 }
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    font-size: large;
+    line-height: 1.8em;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+
+.container input {
+    padding: 5px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    border-radius: 50px;
+
+}
+
  footer{
      height: 20px;
      background-color: black;
