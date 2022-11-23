@@ -1,7 +1,7 @@
 *{
     font-family: Montserrat;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
 
 header {
@@ -9,7 +9,7 @@ header {
     background-color: black;
     text-align: center;
     position: fixed;
-    top: 0px;
+    top: 0;
     width: 100%;
 
 
@@ -23,11 +23,12 @@ header a img {
 
 
 }
+
 #frontbody{
     background-image: url("img/backgroundpic.jpg");
     background-size: cover;
     background-attachment: fixed;
-    backg
+
 
 
 }
@@ -86,7 +87,7 @@ main{
     padding-top: 50px;
 }#spacehoder{
     width: 20vw;
-    height: 20px,;
+    height: 20px;
      border-top: 1pt black dotted;
 
  }
@@ -111,6 +112,35 @@ main{
     position: fixed;
 
 }
+#aboutbody{
+    background-image: url("img/aboutus.jpg");
+    background-size: cover;
+    background-attachment:scroll ;
+}
+
+#aboutarticle{
+
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+}
+
+.aboutsec{
+    margin: 20px 250px;
+}
+.aboutsec h3{
+    font-size: xxx-large;
+    margin-bottom: 30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutsec p{
+    width: 20vw;
+    text-align: justify;
+    hyphens: auto;
+    font-weight: lighter;
+}
 
 #loginmain{
     display:flex;
@@ -129,7 +159,7 @@ main{
     justify-content: center;
     align-items: center;
     background-color: white;
-    margin-top: 300px;
+    margin-top: 100px;
     margin-bottom: 300px;
     position: fixed;
 }
