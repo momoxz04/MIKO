@@ -8,7 +8,7 @@ header {
     height: 100px;
     background-color: black;
     text-align: center;
-    position: fixed;
+
     top: 0;
     width: 100%;
 }
@@ -106,16 +106,54 @@ main{
 
 
 }
-
+#jsonbody{
+    background-image: url("img/backgroundjson.jpg");
+background-size: cover;
+background-attachment:scroll ;
+}
 #jsonmain{
-    display:flex;
+
+    color: white;
+display: flex;
+    flex-direction: column;
+
+padding-top:10vw;
+
+
+
+}
+#jsonmain p{
+    font-size: large;
+}
+#jsonmain h2{
+margin-bottom: 2vw;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: white;
-    margin-top: 300px;
-    margin-bottom: 300px;
-    position: fixed;
+
+}
+.customer-content{
+    justify-content: center;
+    padding-top: 10vw;
+
+
+;
+}
+#Titeljson{
+    font-size: xxx-large;
+    color: white;
+}
+.customer-section{
+display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+
+                                 }
+.customer-section h3{
+    padding-bottom: 30px;
+    font-size: x-large;
 
 }
 #aboutbody{
@@ -204,3 +242,31 @@ main{
      width: 100%;
 
  }
+@media screen and (min-width: 400px) and (max-width: 1000px){
+    .customer-section{
+    display: flex;
+    flex-direction: column;
+        align-items: center;
+
+}
+
+#jsonmain h3{
+    padding-top: 30px;
+
+}
+    #aboutarticle{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 0px;
+        font-size: smaller;
+
+    }
+.aboutsec{
+    margin: 10px;
+    width: 50vw;
+}
+    #frontmain h1{
+        font-size: 12vw;
+    }
+}
