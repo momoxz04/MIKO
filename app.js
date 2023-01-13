@@ -15,8 +15,8 @@ htmlObj.innerHTML =
 
 //Interessen darstellen
 htmlObj = document.getElementById("interessen");
-customer.Interessen.alleine.forEach(alleineid => {
-    htmlObj.innerHTML += `Alleine: ${alleineid}<br>`;
+customer.Interessen.gruppe.forEach(gruppeid => {
+    htmlObj.innerHTML += `Gruppe: ${gruppeid}<br>`;
 })
 
 //Talente vorstellen

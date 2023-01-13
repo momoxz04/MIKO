@@ -4,7 +4,7 @@ button.disabled = true; // Disables the button by default.
 button.style.display = 'none';
 var output = document.querySelector('#output');
 var inputUsername = document.querySelector('#username'); // Selects the username input by the DOM
-var inputPassword = document.querySelector('#password'); // Selects the password inut by the DOM
+var inputPassword = document.querySelector('#password'); // Selects the password input by the DOM
 var passwordStrength = document.querySelector('#passwordStrength'); // Selects password strength
 
 var calcInput = document.querySelector('#calcInput'); // Selects calculation input
@@ -30,18 +30,18 @@ document.addEventListener('keyup', function (event) {
 });
 
 
-// Using a reverse validation. It always return false (not invalid) until something is invalid (true).
+// Using a reverse validation. It always returns false (not invalid) until something is invalid (true).
 function validateInputs() {
     let invalid = false;
     let message = '';
     // Checks if both input length are higher than 3 letters
     if (inputUsername.value.length < 3 || inputPassword.value.length < 3) {
-        message += '<p>Email and password has to have at least 3 letters!</p>';
+        message += '<p>Username and password has to have at least 3 letters!</p>';
         invalid = true;
     }
     // Checks if username matches the regular expression
     if (!regexUsername.test(inputUsername.value)) {
-        message += '<p>Email structure:  (3+ chars) + @ + (3+ chars) + "." + (2-3 chars)</p>';
+        message += '<p>Username structure:  (3+ chars) + @ + (3+ chars) + "." + (2-3 chars)</p>';
         invalid = true;
     }
     // Checks if password has at least 8 chars
@@ -52,7 +52,8 @@ function validateInputs() {
 
     // Checks if password matches the regular expression
     // if (regexPassword.test(inputPassword.value)) {
-    //     message += '<p>Password structure: lenght at least 12, Contains a digit. Contains an uppercase letter.  Contains a lowercase letter.A character not being alphanumeric.</p>';
+    //     message += '<p>Password structure: lenght at least 12, Contains a digit. Contains an uppercase letter.
+    //     Contains a lowercase letter.A character not being alphanumeric.</p>';
     // }
 
     // console.log(invalid);
